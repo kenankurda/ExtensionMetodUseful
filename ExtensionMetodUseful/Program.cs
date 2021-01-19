@@ -41,9 +41,9 @@ namespace ExtensionMetodUseful
 
     public static class ExtensionMethods
     {
-        public static bool Between(this DateTime dt, DateTime rangeBeg, DateTime rangeEnd)
+        public static bool Between(this DateTime dt, DateTime rangeBegin, DateTime rangeEnd)
         {
-            return dt.Ticks >= rangeBeg.Ticks && dt.Ticks <= rangeEnd.Ticks;
+            return dt.Ticks >= rangeBegin.Ticks && dt.Ticks <= rangeEnd.Ticks;
         }
 
         public static int CalculateAge(this DateTime dateTime)
